@@ -1,0 +1,22 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jedrek.mapper.BlogMapper">
+    <insert id="saveBlog" parameterType="com.jedrek.entity.Blog">
+        insert into blog(title,writer,blog_description,content)
+          values(#{title},#{writer},#{blogDescription},#{content})
+    </insert>
+
+    <select id="queryBlog" resultType="com.jedrek.entity.Blog">
+        select * from blog where blog_id=#{blogId}
+    </select>
+
+    <delete id="deleteBlog">
+        delete from blog where blog_id=#{blogId}
+    </delete>
+
+    <select id="queryThird" resultType="com.jedrek.entity.Blog">
+        select * from blog limit 0,#{number}
+    </select>
+
+</mapper>

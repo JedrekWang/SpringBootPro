@@ -1,0 +1,14 @@
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/utils/LicenceFile.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/entity/User.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/utils/LicenceCache.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/entity/Blog.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/Application.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/mapper/BlogMapper.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/interceptor/LicenceHandlerInterceptor.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/annotation/Licence.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/web/BlogController.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/interceptor/SimpleFilter.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/interceptor/SimpleInterceptor.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/utils/ValidationLicence.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/web/OneController.java
+/home/jedrek/IdeaProjects/springBootSample/src/main/java/com/jedrek/mapper/UserMapper.java

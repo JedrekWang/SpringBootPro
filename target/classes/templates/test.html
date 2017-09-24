@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>test file</title>
+    <style>
+    	p{
+    		font-size: 20px;
+    	}
+    	#dropbox{
+    		length:500px;
+    	}
+    </style> 
+</head>
+<body>
+	p标签的用法 
+  <p class="text-left text-primary">my clasdwsdamatedads</p>
+  <p class="text-center text-success">fuckwerwea</p>
+  <p class="text-right text-info">今天太阳不错</p>
+  <p class="text-warning">warning</p>
+  <p class="text-danger">danger</p>
+  	pre标签包含代码块，一行代码用<code></code>
+  <pre>
+  	#include<instdio.h>
+  	int main(){
+  		printf("hello,world");
+  		return 0;
+  	}
+  </pre>
+
+  <table class="table table-bordered table-hover table-condensed">
+  	<thread>
+  		<th>name</th>
+  		<th> sex</th>
+  		<th> saying</th>
+  	</thread>
+  	<tr class="success">
+  		<td>Jedrek</td>
+  		<td>male</td>
+  		<td>never settle</td>
+  	</tr>
+  	<tr class="info">
+  		<td>Jedrek</td>
+  		<td>male</td>
+  		<td>never settle</td>
+  	</tr>
+  	<tr class="danger">
+  		<td>Jedrek</td>
+  		<td>male</td>
+  		<td>never settle</td>
+  	</tr>
+  </table>
+
+  <form class="form-horizontal" role="form">
+  	<div class="form-group">
+	  	<label for="firstname" class="col-sm-1 control-label">名字</label>
+  		<input class="form-control" id="firstname" type="text" placeholder="请输入名字" />
+  	</div>
+  	<div class="form-group">
+  		<label for="firstname" class="col-sm-1 control-label">格言</label>
+  		<input class="form-control" id="firstname" type="text" placeholder="请输入格言" />
+  	</div>
+  	<div class="form-group">
+  		<label for="firstname" class="col-sm-1 control-label">框</label>
+  		<textarea class="form-control" rows="10" placeholder="请输入格言"></textarea>
+  	</div>
+  	<div clss="from-group">
+  		<input class="form-control" type="button" value="提交" />
+  	</div>
+  </form>
+
+  <button class="btn btn-default btn-lg" type="button">一个按钮</button>
+  <button class="btn btn-info " type="button">一个按钮</button>
+  <button class="btn btn-success btn-sm" type="button">一个按钮</button>
+  <button class="btn btn-warning" type="button">一个按钮</button>
+
+  <br/>
+  <a><span class="glyphicon glyphicon-home"></span>HOME</a>
+  <a><span class="glyphicon glyphicon-shopping-cart"></span>CART</a>
+  <a><span class="glyphicon glyphicon glyphicon-envelope"></span>信封</a>
+</body>
+</html>

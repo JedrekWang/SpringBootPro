@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Jedrek's Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #welcome{
+        margin-top: 60px;
+        width: 70%;
+      }
+      #welcome .jumbotron{
+        background-image: url(img/gakki.jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        height: 310px;
+        color: white;
+      }
+      #novel{
+        margin: 0 auto;
+        width: 70%;
+      }
+    </style>
+  </head>
+
+  <body>
+  <!-- 标题栏 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jedrek's Blog</a>
+        </div>
+
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="#"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span>我的简历</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>技术文章</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-screenshot" aria-hidden="true">个人项目</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>学习总结</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>联系本人</a></li>
+          </ul>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="@carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="">
+          <div class="carousel-caption"></div>
+        </div>
+      </div>
+      
+    <div class="container" id="welcome">
+      <div class="jumbotron">
+        <p>Later equals never</p>
+        <p><a class="btn btn-primary btn-lg" role="button">
+         learn more</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="novel">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <!--时间格式转换${#dates.format(blog.created,'yyyy.MM.dd')}-->
+          <h2 th:text="${#dates.format(blogs[0].created,'yyyy.MM.dd')}">2016.6.12</h2>
+          <p th:text="${blogs[0].title}">今天的天气真是不错啊，我刷完牙取表哥家看了蓝猫淘气三千问</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2 th:text="${#dates.format(blogs[1].created,'yyyy.MM.dd')}">2017.7.10</h2>
+          <p th:text="${blogs[1].title}">忘记了考试的无奈，现在开始放假了，这个暑假我要上到砖石</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2 th:text="${#dates.format(blogs[2].created,'yyyy.MM.dd')}">2018.9.10</h2>
+          <p th:text="${blogs[2].title}">不知你最近过的怎么样啊，my old friend</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
